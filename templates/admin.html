@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="content1">
+
+    <script src="{{ url_for('static', filename='table.js') }}" defer></script>
+
+    <div class="card">
+        <p style="font-weight: bolder; color: #CEE0C9; font-size: 3vh;">Search History</p>
+        <table id="searchHistoryTable">
+            <thead>
+                <tr>
+                    <th>Search Term</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

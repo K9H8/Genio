@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="content1">
+    <div class="card">
+
+        <form action="/submit" method="POST">
+
+            <label for="country" style="color: rgb(220, 255, 211)"><b>Choose a Topic:</b></label><br><br>
+            <input class="text-field" name="country" required><br><br>
+
+            <input type="submit" value="Submit" class="sub-btn">
+        </form>
+    </div>
+</div>
+{% endblock %}

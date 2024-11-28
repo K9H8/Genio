@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content1">
+    <div id="output"></div>
+</div>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+    function currentSlide(num) {
+        console.log(num);
+        let content = ""; // Initialize an empty string for the content
+        if (num == 1) {
+            content = `
+                    <div class="container" id="content">
+                        <h1 style="color: rgb(36, 65, 53);"><b>{{ country_name }}</b></h1>
+                        <p>{{ country_description }}</p>
+                        <a href="https://en.wikipedia.org/wiki/{{ country_name }}">
+                            <img src="{{ country_image[0] }}" alt="{{ country_name }}" class="country-image">
+                        </a>
+                    </div>`;
+        } else if (num == 2) {
+            // Add content for slide 2
+            content = `    <div class="container">
+                    <div class ="image-container">
+                <a href="{{country_image[0]}}"> <img src="{{country_image[0]}}" alt="Image 1"></a>
+                <a href="{{country_image[1]}}"> <img src="{{country_image[1]}}" alt="Image 3"></a>
+                <a href="{{country_image[2]}}"> <img src="{{country_image[2]}}" alt="Image 4"></a>
+                <a href="{{country_image[3]}}"> <img src="{{country_image[3]}}" alt="Image 2"></a>
+                </div>
+                </div>`;
+        } else if (num == 3) {
+            // Add content for slide 3
+            content = `
+
+                    <div class="container">
+                    <iframe width=500px height=500px
+                    src="{{country_video}}" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>`
+
+        }
+
+        document.getElementById('output').innerHTML = content; // Update the innerHTML of the output div
+    }
+    window.onload = function () {
+        currentSlide(1);
+    };
+
+
+</script>
+
+{% endblock %}

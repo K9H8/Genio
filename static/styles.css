@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    /* Ensure padding and border are included in element's total width and height */
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Use a sans-serif font for better readability */
+    background-color: rgb(206, 224, 201);
+    /* Light background color */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.content1 {
+
+    display: flex;
+    /* Use flexbox to center the container */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin-top: 10vh;
+    height: 70vh;
+}
+
+ul {
+
+    list-style-type: none;
+    /* Removes bullets */
+    margin-top: 16vh;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+li {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #5AA085;
+    min-width: 80px;
+    margin: auto;
+    transition: transform 0.5s ease;
+}
+
+li:hover {
+
+    background-size: 100% 100%;
+    color: #5AA085;
+    animation: spring 300ms ease-out;
+    text-shadow: 2 -1px 0 #000000;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+li:active {
+    transform: translateY(4px);
+}
+
+a {
+    color: inherit;
+    /* Makes the link color the same as the surrounding text */
+    text-decoration: none;
+    /* Removes the underline */
+}
+
+/* Optional: Change the style on hover */
+a:hover {
+    color: #5AA085;
+}
+
+.container {
+    color: rgb(220, 255, 211);
+    max-width: 600px;
+    /* Maximum width of the container */
+    margin: 20px;
+    /* Margin around the container */
+    padding: 40px;
+    /* Padding inside the container */
+    background-color: rgb(90, 160, 133);
+    /* White background for the container */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.6);
+    /* Shadow for depth */
+    text-align: center;
+    /* Center text within the container */
+    transition: transform 0.3s;
+    /* Animation for scaling effect */
+}
+
+.container:hover {
+    transform: scale(1.2);
+    /* Slightly scale the container on hover */
+    font-size: scale(1.2);
+}
+
+h1 {
+    font-size: 24px;
+    /* Font size for the heading */
+    color: #333;
+    /* Dark gray color for the text */
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+.text-field {
+    background-color: rgb(220, 255, 211);
+    border: transparent;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.country-image {
+    max-width: 200px;
+    height: auto;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.country-image:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+.card {
+    background-color: rgb(90, 160, 133);
+    font-size: 1.2em;
+    max-height: 80%;
+    max-width: 600px;
+    /* Maximum width of the container */
+    margin: 20px;
+    /* Margin around the container */
+    padding: 40px;
+    /* Padding inside the container */
+
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.6);
+    /* Shadow for depth */
+    text-align: center;
+    /* Center text within the container */
+    transition: transform 0.3s;
+}
+
+
+.sub-btn {
+
+    padding: 5px;
+    background-color: rgb(77, 136, 113);
+    color: rgb(220, 255, 211);
+    border: 2px solid rgb(68, 121, 100);
+    /* Green */
+    border-radius: 12px;
+    transition: 0.5s;
+
+}
+
+.sub-btn:hover {
+    transform: scale(1.2);
+    background-color: rgb(220, 255, 211);
+    /* Green */
+    color: rgb(90, 160, 133);
+
+
+}
+
+.sub-btn:active {
+    transition-duration: 0.4s;
+    transform: scale(1.2);
+    transition: transform 1s ease;
+
+
+}
+
+.card:hover {
+    transform: scale(1.5);
+    font: scale(1.2);
+    max-height: 80%;
+    transition: transform 0.5s ease;
+
+
+}
+
+
+
+.card input:focus {
+
+    margin: 10px;
+    font-size: scale(1.2);
+    /* Keeps the font size large while typing */
+    transition: margin 0.5s ease;
+    /* Smooth transition for padding */
+}
+
+input {
+    border-color: transparent;
+    border: transparent;
+
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+button {
+
+    padding: 5px;
+    border-radius: 5px;
+    border: transparent;
+    transition: transform 0.5s ease;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.5);
+
+
+}
+
+button:hover {
+    background-color: #DCFFD3;
+    color: black;
+    transform: scale(1.2);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 20px;
+    /* Space between images */
+    max-width: 800px;
+    /* Maximum width of the container */
+    margin: auto;
+    /* Center the container */
+}
+
+.image-container img {
+    width: 100%;
+    /* Make images responsive */
+    height: 200px;
+    /* Set a fixed height for uniformity */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering the container */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: shadow effect */
+    transition: transform 1s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.15);
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Merges borders of adjacent cells */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow effect */
+    margin-top: 20px;
+    /* Adds space above the table */
+    background-color: #CEE0C9;
+    /* Sets a light background color */
+    border-radius: 8px;
+    /* Rounds the corners */
+    overflow: hidden;
+    /* Prevents overflow for rounded corners */
+}
+
+th,
+td {
+    padding: 12px;
+    /* Adds padding for cells */
+    text-align: left;
+    /* Aligns text to the left */
+    border-bottom: 1px solid #8bc48d;
+    /* Adds a bottom border to cells */
+}
+
+th {
+    background-color: #8bc48d;
+    /* Sets background color for the header */
+    color: #CEE0C9;
+    /* Sets text color for the header */
+    font-weight: bold;
+    /* Makes header text bold */
+}
+
+tr:hover {
+    background-color: #badd9a;
+    /* Changes background on hover */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #8bc48d;
+    /* Sets a light background for even rows */
+}

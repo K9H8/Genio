@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="content1">
+    <div class="card" id="myDiv">
+        <label for="userInput">Username: </label>
+        <input type="text" id="username" placeholder="username...">
+
+        <br><br>
+        <label for="userInput">Password: </label>
+        <input type="password" id="password" placeholder="password...">
+
+        <br><br>
+        <button onclick="getUserInput()">Submit</button>
+        <p id="output"></p>
+
+    </div>
+</div>
+
+<Script>
+    var user = { username: "bob", password: "lebob" }
+    function getUserInput() {
+        // Get the value from the input field
+        const username1 = document.getElementById('username').value;
+        const password1 = document.getElementById('password').value;
+
+        if (username1 === user.username && password1 === user.password) {
+            // Display the input
+            document.getElementById('output').textContent = `Access Granted!`;
+            myDiv.style.backgroundColor = "rgb(0, 255, 0, 0.4)";
+            setTimeout(() => {
+                window.location.href = "{{ url_for('admin') }}";
+            }, 1500);
+        }
+        else {
+            document.getElementById('output').textContent = `Access Denied!`;
+            myDiv.style.backgroundColor = "rgb(255, 0, 0,0.6)";
+        }
+    }
+</script>
+
+
+{% endblock %}
