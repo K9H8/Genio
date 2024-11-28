@@ -69,9 +69,9 @@ The app is built using **Flask** and requires several external libraries for fun
    ```
 
 ---
-[![image](https://github.com/user-attachments/assets/4b7d0153-f7cc-40ca-b2e4-e0c22ba8aeb3) | 400]
-[![image](https://github.com/user-attachments/assets/21c08c99-30e5-423f-b6d9-d47f22357618) | 400 ]
-[![image](https://github.com/user-attachments/assets/ecb3e9c5-5271-4138-bb6b-745c92eeb559) | 400]
+<img src="https://github.com/user-attachments/assets/4b7d0153-f7cc-40ca-b24a-e0c22ba8ae3b" alt="image" width="400">
+<img src="https://github.com/user-attachments/assets/21c08c99-30e5-423f-b6d9-d4f72357163b" alt="image" width="400">
+<img src="https://github.com/user-attachments/assets/ecb3e9c5-5271-4138-bb6d-745c92eeb559" alt="image" width="400">
 
 
 #### **Future Enhancements**
