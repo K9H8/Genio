@@ -8,7 +8,7 @@ from datetime import datetime
 import json
 
 # Initialize your OpenAI API key
-api_key1="AIzaSyC3sD3npnrYmeskO0zgVt2zjfbqvBGsrW8"
+api_key1="Enter-API-Key"
 genai.configure(api_key = api_key1)
 
 def ask_Gemini(question): 
