@@ -72,7 +72,7 @@ The app is built using **Flask** and requires several external libraries for fun
 
 ### **Video previrew** 
 
-https://jumpshare.com/s/w8ntT7Ao7a83XG99Q8rr
+https://github.com/user-attachments/assets/f8e9abf7-fac5-4e9e-89a7-2389448fe54b
 
 #### **Future Enhancements**
 - Add user authentication.
